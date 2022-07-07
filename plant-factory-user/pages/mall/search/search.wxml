@@ -1,0 +1,21 @@
+<view >
+        <scroll-view style="height: 100vh;" scroll-y="true" bindscrolltolower='getSideItem'>
+       
+            <van-grid column-num="2" gutter="{{ 8 }}" border="{{fasle}}">
+            <van-grid-item use-slot wx:for="{{ items }}"  content-class="grid_content" custom-class="grid_custom" wx:key="index">
+               
+                   <view class="box">
+                    <view class="innerbox">
+                        <van-image use-loading-slot src="{{imgUrl + item.images[0]}}" image-class="img" width="100%" height="100%" radius="5px">
+                        <van-loading slot="loading" type="spinner" size="20" vertical />
+                    </van-image>
+                    </view>
+                   </view>
+                    <view class="title_font"><text>{{item.title}}</text></view>
+                    <view class="title_font red-text"><text>￥{{item.showPrice/100}}</text></view>
+                    
+            
+            </van-grid-item>
+        </van-grid>
+    </scroll-view>
+</view>

@@ -1,0 +1,44 @@
+/* pages/mine/mine.wxss */
+.user{
+  background-color: #D8E9A8;
+}
+.userInfo{
+  display: flex;
+  align-items: center;
+  height: 20vh;
+}
+.orderHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.userInfoText{
+  height:100%;
+  line-height:20vh;
+  margin-left: 10px;
+}
+.userInfoIcon{
+  margin-left: 50px;
+}
+.order{
+  background-color: white;
+  height: 80vh;
+  border:1px transparent;
+  border-radius: 25px;
+}
+.orderHeader{
+  margin-top:2rem;
+  padding: 1rem 1.3rem 0 1.3rem;
+  display: flex;
+  justify-content:space-between;
+  
+}
+.orderIcon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20vw;
+  align-items: center;
+}
+.text{
+  font-size: small;
+}

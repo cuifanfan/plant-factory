@@ -1,0 +1,44 @@
+<!--pages/order/orderDetail.wxml-->
+<view class="order">
+  <view class="address">
+    <view style="margin:0 8px"><van-icon name="location" size="30px" color="#ce540e"/></view>
+    <view class="nameAddress">
+      <view>
+        <text style="margin-right:8px" class="nameText">李明扬</text><text class="numberText">86-15527873638</text>
+      </view>
+      <view><text class="provinceText">湖北省 武汉市 洪山区 狮子山街道 HZAU</text></view>
+    </view>
+    <view style="margin-left:8px"><van-button type="default" style="margin-right:10px" size="small" data-id="{{item.id}}"  bindtap="navigateToOrderDetail"  round>修改</van-button></view>
+  </view>
+
+  <view>
+    <view class="orderCard">
+      <view><text class="pruchaseSuccess">交易成功</text></view>
+      <view wx:for="{{orderDetailList.items}}" wx:key="index" wx:for-item="product">
+      <van-card
+      num="{{product.quantity}}"
+      price="{{product.price}}"
+      desc="{{product.spec}}"
+      title="{{product.title}}"
+      thumb="https://www.fangxingarden.com/public/commodity/{{ product.image }}">
+      </van-card>
+      </view>
+      <view><text class="pruchaseAmount">总价￥{{item.amount}}</text></view>
+      <!-- <view class="action">
+        <view class="actionText">更多</view>
+        <view>
+           <van-button type="default" style="margin-right:10px" size="small" data-id="{{item.id}}"  bindtap="navigateToOrderDetail"    round>查看订单</van-button>
+           <van-button size="small"  color="#fb4f2a" round plain>评价</van-button>
+        </view>
+      </view> -->
+  </view>
+  </view>
+  <view class="ordercard">
+        <view class="orderTitle">订单信息</view>
+        <van-row class="orderText" wx:for="{{orderDetailList}}" wx:key="index" wx:item="{{item}}">
+          <van-col span="8">{{chineseMeaning[index]}}</van-col>
+          <van-col span="16">{{item}}</van-col>
+        </van-row>
+      </view>
+</view>
+

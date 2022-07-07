@@ -1,0 +1,47 @@
+<!--pages/mine/mine.wxml-->
+<!-- <text>pages/mine/mine.wxml</text> -->
+<view class="user">
+  <view class="userInfo" bindtap="acceptAuthorization">
+    <!-- <navigator class="userInfo" url="/pages/mine/pages/acceptAuthorization"  ><van-icon class="userInfoIcon" name="https://b.yzcdn.cn/vant/icon-demo-1126.png" size="50px"/>
+ 
+  <text class="userInfoText">微信授权登录</text></navigator> -->
+  <!-- <van-icon class="userInfoIcon" name="https://b.yzcdn.cn/vant/icon-demo-1126.png" size="50px"/> -->
+  <van-image  round class="userInfoIcon" width="55px" height="50px" src="{{userInfo.avatarUrl}}" />
+  <text class="userInfoText">{{userInfo.nickName}}</text>
+</view>
+<view class="order">
+<view class="orderHeader" bindtap="navigateToOrder">
+  <view style="font-weight:700" >我的订单</view>
+  <view  style="font-weight:100;color:#caccce" >全部 ></view>
+</view>
+  <view style="margin:20px 15px; display:flex;justify-content: space-around;">
+      <view class="orderIcon">
+        <van-icon name="gold-coin-o" size="33px" />
+        <text class="text">待付款</text>
+      </view>
+      <view class="orderIcon">
+        <van-icon name="bag-o" size="33px" />
+        <text class="text">待发货</text>
+      </view>
+      <view class="orderIcon">
+        <van-icon name="logistics" size="33px" />
+        <text class="text">待收货</text>
+      </view>
+      <view class="orderIcon">
+        <van-icon name="chat-o" size="33px" />
+        <text class="text">我的评论</text>
+      </view>
+
+      <view class="orderIcon">
+        
+        <van-icon name="refund-o" size="33px" />
+        <text class="text">退款/售后</text>
+      </view>
+
+    </view>
+    <van-cell-group>
+      <van-cell title="我的信息" icon="friends-o" size="large" is-link />
+      <van-cell title="我的位置" icon="location-o" size="large" is-link />
+    </van-cell-group>
+  </view>
+</view>

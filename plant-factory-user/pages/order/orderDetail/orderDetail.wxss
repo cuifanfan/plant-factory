@@ -1,0 +1,79 @@
+/* pages/order/orderDetail.wxss */
+.order{
+  background-color: #d2d2d3;
+  padding-top: 1px;
+}
+.orderCard{
+  margin: 10px 0px;
+  padding:10px 20px;
+  background-color: #fafafa;
+}
+.action{
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.actionText{
+  font-size: small;
+  line-height: 30px;
+  font-weight:1000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#b9bcc2;
+  /* font-weight: lighter; */
+}
+.pruchaseSuccess{
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  /* font-weight:00; */
+  color: rgb(247, 58, 58);
+}
+
+
+/* 地址栏 */
+.address{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.provinceText{
+  font-size: x-small;
+  color: #8c8c91;
+}
+.numberText{
+  font-size: x-small;
+  color: #8c8c91;
+}
+.nameText{
+  font-size: 1000;
+}
+.nameAddress{
+  margin: 10px 0;
+}
+.pruchaseAmount{
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+  margin: 5px; 
+  color: rgb(240, 70, 70);
+
+  /* font-weight:00; */
+}
+
+.ordercard{
+  background-color: #fff;
+  padding: 10px;
+}
+.orderTitle{
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.orderText{
+  font-size: 15px;
+  line-height: 30px;
+  color: #626263;
+}

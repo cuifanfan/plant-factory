@@ -1,0 +1,18 @@
+/* pages/mall/goodItem/goodItem.wxss */
+
+.input {
+    width: 80rpx;
+    height: 50rpx;
+    text-align: center;
+    background-color: white;
+}
+
+.button {
+    width: 22px;
+    border-radius: 5px;
+}
+
+.card {
+    margin: 25rpx 10rpx;
+    border-radius: 10rpx;
+}

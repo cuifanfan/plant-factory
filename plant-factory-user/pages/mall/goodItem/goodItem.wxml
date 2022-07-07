@@ -1,0 +1,26 @@
+<!--pages/mall/goodItem/goodItem.wxml-->
+<view>
+    <van-card tag="标签" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" custom-class="card">
+        <view slot="footer" style="display: flex;align-items: center;justify-content:flex-end;">
+            <van-button icon="plus" type="primary" size="mini" />
+            <input type="text" name="" id="" class="input" value="0" />
+            <van-button icon="minus" type="primary" size="mini" />
+        </view>
+    </van-card>
+
+    <van-card tag="标签" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" custom-class="card">
+        <view slot="footer" style="display: flex;align-items: center;justify-content:flex-end;">
+            <van-button icon="plus" type="primary" size="mini" />
+            <input type="text" name="" id="" class="input" value="0" />
+            <van-button icon="minus" type="primary" size="mini" />
+        </view>
+    </van-card>
+
+    <van-card tag="标签" price="10.00" desc="描述信息" title="商品标题" thumb="{{ imageURL }}" custom-class="card">
+        <view slot="footer" style="display: flex;align-items: center;justify-content:flex-end;">
+            <van-button icon="plus" type="primary" size="mini" />
+            <input type="text" name="" id="" class="input" value="0" />
+            <van-button icon="minus" type="primary" size="mini" />
+        </view>
+    </van-card>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/order/order.wxml-->
+<view class="order">
+  <van-tabs active="{{ active }}" sticky="true" >
+  <van-tab title="全部订单">
+  <view wx:for="{{orderList}}" wx:key="id" class="orderCard">
+    <view><text class="pruchaseSuccess">交易成功</text></view>
+    <view wx:for="{{item.items}}" wx:key="index" wx:for-item="product">
+    <van-card
+    num="{{product.quantity}}"
+    price="{{product.price}}"
+    desc="{{product.spec}}"
+    title="{{product.title}}"
+    thumb="https://www.fangxingarden.com/public/commodity/{{ product.image }}">
+    </van-card>
+    </view>
+    <view><text class="pruchaseAmount">总价￥{{item.amount}}</text></view>
+    <view class="action">
+      <view class="actionText">更多</view>
+      <view>
+         <van-button type="default" style="margin-right:10px" size="small" data-id="{{item.id}}"  bindtap="navigateToOrderDetail" round>查看订单</van-button>
+         <van-button size="small"  color="#fb4f2a" round plain>评价</van-button>
+      </view>
+    </view>
+  </view>
+    
+ </van-tab>
+  <van-tab title="待付款">内容 2</van-tab>
+  <van-tab title="待发货">内容 3</van-tab>
+  <van-tab title="待收货">内容 4</van-tab>
+</van-tabs>
+</view>

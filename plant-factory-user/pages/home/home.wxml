@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<van-toast id="van-toast" />
+<text>pages/home/home.wxml</text>
+
